@@ -13,29 +13,27 @@
 // For each testcase, output a pair of positive integers a and b (1≤a,b≤109) such that GCD(a,b)+LCM(a,b)=x. It's guaranteed that the solution always exists. If there are several such pairs (a,b), you can output any of them.
 
 
-
 #include <iostream>
 
 using namespace std;
 
 int main(){
-  int n1, n2, gcd, lcm;
+  int n1, n2, n3, gcd, lcm;
 
   cout << "Enter two Number for GCD & LCM";
-  cin >> n1 >> n2;
+  cin >> n1 >> n2 >> n3;
 
     gcd = 1;
     lcm = 1;
 
     for (int i = 1; i <= 1000; i++){
-        if((n1 % i == 0) && (n2 % i == 0)){
+        if((n1 % i == 0) && (n2 % i == 0) && (n3 %i == 0)){
             gcd = i;
         }
     }
  
-    lcm = (n1 * n2 ) / gcd;
 
-    cout << "GCD of two number " << n1 << " and " << n2 << " is: " << gcd;
-    cout << "LCM of Two Number is " << n1 << " and " << n2 << " is: " << lcm;
+    cout << "GCD of two number " << n1 << " , " << n2 << " and " << n3 << " is: " << gcd;
+  
     return 0;
 }
