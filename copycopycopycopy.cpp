@@ -7,16 +7,16 @@ int main()
     cin>>t;
     while(t--)
     {
-        int a,b;
-        cin>>a;
+        int a, b;
+        cin >> a;
         set<int>s;
         while(a--)
         {
             int b;
-            cin>>b;
+            cin >> b;
             s.insert(b);
         }
-        cout<<s.size()<<endl;
+        cout << s.size() << endl;
     }
     return 0;
 }
